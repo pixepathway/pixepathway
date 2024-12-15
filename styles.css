@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,396;1,396&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/* Base Styles for Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4D148C;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+}
+.login a {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-family:"Poppins", serif;
+    font-weight: bold;
+}
+.login a:hover{
+    background-color: #ec7926;
+}
+nav .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+}
+nav .logo span {
+    font-size: 34px;
+    font-weight: 900;
+    color: #ec7926;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* For the Menu Icon */
+.menu-icon {
+    display: none; /* Hide by default */
+}
+nav ul li a:hover{
+    color: #ec7926;
+    text-decoration: underline;
+}
+.menu-icon i{
+    color: #ffff;
+    font-size: 30px;
+}
+.menu-icon{
+    display: none;
+}
+/* Hero Section */
+.hero {
+    background-image: url('cargo-plane-Rosen-Aviation-scaled.jpeg'); /* Replace with a real hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-attachment: fixed;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  .hero button{
+    color: #ffff;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6a00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-family:"Poppins", serif;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #ec7926;
+  }
+  
+/* Hero Section */
+.hero {
+    background-image:url("cargo-plane-Rosen-Aviation-scaled.jpeg");
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about h1 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.mission i {
+    margin-top: 1rem;
+    color: #ffcc00;
+}
+
+/* Company Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+}
+
+.stats-box {
+    text-align: center;
+}
+
+.stats-box i {
+    color: #0073e6;
+}
+
+.stats-box p {
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+.heroboy {
+    background: url('services-bg.jpg') no-repeat center center/cover;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.service-box {
+    text-align: center;
+    width: 30%;
+}
+
+.service-box h2 {
+    margin-top: 1rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.info-box {
+    text-align: center;
+}
+
+.info-box i {
+    color: #0073e6;
+}
+
+.info-box p {
+    margin-top: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4D148C;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.service-overview {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.service-overview h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.service h3 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.service-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.service-text {
+    max-width: 600px;
+    padding-right: 20px;
+}
+.service-image img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.service ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.benefits {
+    background-color: #003366;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.benefit {
+    display: inline-block;
+    width: 23%;
+    padding: 20px;
+    background-color: #005f8f;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.benefit i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.benefit p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Responsive Design for Mobile */
+
+/* Styles for the Mobile View */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation links on small screens */
+        width: 100%;
+        flex-direction: column;
+        background-color: #17042b;
+        position: absolute;
+        top: 60px; /* Position below the navbar */
+        left: 0;
+        padding: 20px;
+    }
+    .login{
+        display: none;
+    }
+    nav ul.active {
+        display: flex; /* Show when menu is active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .login a {
+        font-size: 18px;
+    }
+}
+/* Mobile View for the Company Stats Section */
+@media (max-width: 768px) {
+    .stats {
+        display: flex;
+        flex-direction: column;  /* Stack the stats boxes vertically */
+        align-items: center;     /* Center the stats boxes */
+        padding: 2rem 1rem;      /* Adjust padding */
+        text-align: center;      /* Center the text */
+    }
+
+    .stats h2 {
+        font-size: 1.8rem;       /* Adjust heading size for mobile */
+        margin-bottom: 2rem;     /* Add space below the heading */
+    }
+
+    .stats-box {
+        width: 80%;              /* Make each stats box take up 80% of the width */
+        margin-bottom: 2rem;     /* Add space between each stats box */
+        text-align: center;      /* Center-align text inside each box */
+    }
+
+    .stats-box i {
+        font-size: 3rem;         /* Adjust icon size */
+        margin-bottom: 1rem;     /* Space between icon and text */
+        color: #0073e6;          /* Set a color for the icon */
+    }
+
+    .stats-box p {
+        font-size: 1.2rem;       /* Adjust font size for the paragraph */
+        line-height: 1.5;        /* Add line height for readability */
+    }
+}
+/* Mobile View for the Services Hero Section */
+@media (max-width: 768px) {
+    .heroboy {
+      background-size: cover;  /* Ensure background image scales well */
+      background-position: center;
+      padding: 4rem 1rem;  /* Adjust padding */
+      text-align: center;  /* Center text */
+    }
+  
+    .heroboy-text h1 {
+      font-size: 2rem;  /* Adjust the heading size */
+      margin-bottom: 1rem;  /* Add space below the heading */
+    }
+  
+    .heroboy-text p {
+      font-size: 1rem;  /* Adjust the paragraph size */
+      line-height: 1.6;  /* Increase line height for better readability */
+    }
+  }
+  
+  /* Mobile View for the Services Section */
+  @media (max-width: 768px) {
+    .services {
+      display: flex;
+      flex-direction: column;  /* Stack service boxes vertically */
+      align-items: center;     /* Center the service boxes */
+      padding: 2rem 1rem;      /* Adjust padding */
+    }
+  
+    .service-box {
+      width: 80%;              /* Make each service box take up 80% of the width */
+      margin-bottom: 2rem;     /* Space between each service box */
+      text-align: center;      /* Center-align text inside each service box */
+    }
+  
+    .service-box i {
+      font-size: 3rem;         /* Adjust icon size */
+      margin-bottom: 1rem;     /* Space between icon and text */
+      color: #0073e6;          /* Icon color */
+    }
+  
+    .service-box h2 {
+      font-size: 1.4rem;       /* Adjust heading size for mobile */
+      margin-bottom: 1rem;     /* Space between heading and paragraph */
+    }
+  
+    .service-box p {
+      font-size: 1rem;         /* Adjust paragraph size for mobile */
+      line-height: 1.5;        /* Add line height for better readability */
+    }
+  }
+/* Mobile-specific Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Services Section */
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Service Sections */
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .benefit {
+        text-align: center;
+        width: 100%;
+    }
+
+    .benefit i {
+        font-size: 2em;
+        color: #0073e6;
+        margin-bottom: 10px;
+    }
+
+    .benefit p {
+        font-size: 1.1em;
+    }
+
+}
+
+/* Additional mobile adjustments */
+@media only screen and (max-width: 480px) {
+
+    .service-box h2 {
+        font-size: 1em;
+    }
+
+    .service-box p {
+        font-size: 0.8em;
+    }
+
+    .service-text h4 {
+        font-size: 1.1em;
+    }
+
+    .service-text p {
+        font-size: 0.9em;
+    }
+
+    .service-content {
+        padding: 10px;
+    }
+
+    .service-image img {
+        width: 100%;
+    }
+
+    .benefit p {
+        font-size: 1em;
+    }
+}
+/* Mobile-specific Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Services Section */
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Service Sections */
+    .service-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        max-width: 100%; /* Ensures it doesn't go beyond the screen width */
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .benefit {
+        text-align: center;
+        width: 100%;
+    }
+
+    .benefit i {
+        font-size: 2em;
+        color: #0073e6;
+        margin-bottom: 10px;
+    }
+
+    .benefit p {
+        font-size: 1.1em;
+    }
+
+}
+
+/* Additional mobile adjustments */
+@media only screen and (max-width: 480px) {
+
+    .service-box h2 {
+        font-size: 1em;
+    }
+
+    .service-box p {
+        font-size: 0.8em;
+    }
+
+    .service-text h4 {
+        font-size: 1.1em;
+    }
+
+    .service-text p {
+        font-size: 0.9em;
+    }
+
+    .service-content {
+        padding: 10px;
+    }
+
+    .service-image img {
+        width: 100%;
+        max-width: 100%; /* Ensures full width for smaller screens */
+    }
+
+    .benefit p {
+        font-size: 1em;
+    }
+}  
+  /* Mobile View for the Contact Info Section */
+  @media (max-width: 768px) {
+    .contact-info {
+      display: flex;
+      flex-direction: column;  /* Stack the contact info boxes vertically */
+      align-items: center;     /* Center the contact boxes */
+      padding: 2rem 1rem;      /* Adjust padding */
+      text-align: center;      /* Center the text */
+    }
+  
+    .info-box {
+      width: 80%;              /* Make each info box take up 80% of the width */
+      margin-bottom: 2rem;     /* Add space between each info box */
+      text-align: center;      /* Center-align text inside each box */
+    }
+  
+    .info-box i {
+      font-size: 3rem;         /* Adjust icon size */
+      margin-bottom: 1rem;     /* Space between icon and text */
+      color: #0073e6;          /* Set a color for the icon */
+    }
+  
+    .info-box h3 {
+      font-size: 1.2rem;       /* Adjust heading size for mobile */
+      margin-bottom: 0.5rem;   /* Space between heading and paragraph */
+    }
+  
+    .info-box p {
+      font-size: 1rem;         /* Adjust paragraph size for mobile */
+      line-height: 1.5;        /* Add line height for better readability */
+    }
+  }
+  /* Base Styles for About Section (Mobile-First) */
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px;
+    text-align: center; /* Center text for smaller screens */
+  }
+  
+  .about-text {
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text */
+    width: 100%; /* Make text area full width */
+    max-width: 800px; /* Set a max-width to make the text area wider */
+    margin-left: auto; /* Center the content */
+    margin-right: auto; /* Center the content */
+  }
+  
+  .about-image {
+    margin-top: 20px;
+  }
+  
+  .about-img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Set a max-width for the image */
+    height: auto;
+  }
+  
+  /* Larger screens (Tablet and up) */
+  @media (min-width: 768px) {
+    .about {
+      flex-direction: row; /* Change layout to row for larger screens */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .about-text {
+      max-width: 65%; /* Increase the width of the text on larger screens */
+      text-align: justify; /* Justify text for larger screens as well */
+      padding-right: 20px;
+    }
+  
+    .about-image {
+      max-width: 35%; /* Adjust the width of the image */
+      padding-left: 20px;
+    }
+  
+    .about-img {
+      width: 100%; /* Keep image responsive */
+      max-width: 400px; /* Limit image size */
+      height: auto;
+    }
+  }
+  
